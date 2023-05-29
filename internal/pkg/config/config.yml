@@ -1,0 +1,15 @@
+server:
+  host: localhost
+  port: 8080
+authclient:
+  host: localhost
+  port: 7070
+casbin:
+  model: ./internal/middleware/config/config.conf
+  policy: ./internal/middleware/config/models.csv
+jwt:
+  signingkey: secret
+  expire: 24
+  refreshkey: refresh
+  rexpire: 24
+environment: development
